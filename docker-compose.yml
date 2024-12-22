@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PGHOST: 213.219.213.130  # IP address of the DB server (VM2)
+      PGDATABASE: todo
+      PGUSER: todo_user
